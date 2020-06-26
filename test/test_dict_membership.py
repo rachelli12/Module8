@@ -1,3 +1,10 @@
+"""
+Program name: test_dict_membership.py
+Author: Rachel Li
+Last date modified: 06/26/2020
+
+The purpose of this program is to test dict_membership.py
+"""
 import unittest
 import unittest.mock as mock
 from more_fun_with_collections import dict_membership as dm
