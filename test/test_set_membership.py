@@ -1,3 +1,10 @@
+"""
+Program name: test_set_membership.py
+Author: Rachel Li
+Last date modified: 06/26/2020
+
+The purpose of this program is to test set_membership.py
+"""
 import unittest
 import unittest.mock as mock
 from more_fun_with_collections import set_membership as sm
