@@ -1,3 +1,10 @@
+"""
+Program name: test_date_time.py
+Author: Rachel Li
+Last date modified: 06/27/2020
+
+The purpose of this program is to test date_time.py
+"""
 import datetime
 import unittest
 from more_fun_with_collections import date_time as dt
