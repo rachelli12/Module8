@@ -1,14 +1,22 @@
-from datetime import datetime, timedelta
+"""
+The purpose of this program is to calculate half birthday
+"""
+import datetime
+from datetime import timedelta
 
-#lastest birthday
+#latest birthday
 
-def half_birthday():
-    #returns the half birthday
+def half_birthday(birthdate):
+    '''
+    :param birthdate: this represents birthdate
+    :param half_birthdate: this represents calculated half birthday
+    :return: returns calculated half birthday
+    '''
+    birthdate_strp = datetime.datetime.strptime(birthdate, '%Y-%m-%d')
     #use timedelta
-    pass
+    half_birthdate = birthdate_strp + timedelta(days = 183)
+    #returns the half birthday
+    return f'{half_birthdate:%Y-%m-%d}'
 
 if __name__ == '__main__':
-    oTime = datetime.now()
-    print(oTime.isoformat())
-    pass
-
+    print(half_birthday('2020-09-24'))
