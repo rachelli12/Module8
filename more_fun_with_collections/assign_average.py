@@ -1,33 +1,54 @@
-def switch_average():
+def grade(average_score):
+    returned_score = 0.0
+
+def one():
+    return 'A'
+
+def two():
+    return 'B'
+
+def three():
+    return 'C'
+
+def four():
+    return 'D'
+
+def default():
+    return 'F'
+
+def switch_average(score1, score2, score3):
+    total = 0.0
+    average_score = int(score1 + score2 + score3) / 3
+    if 90 <= average_score <= 100:
+        return one()
+    elif 80 <= average_score < 90:
+        return two()
+    elif 70 <= average_score < 80:
+        return three()
+    elif 50 <= average_score < 60:
+        return four()
+    elif average_score < 50:
+        return default()
     #return score = ??
     #make similar function wise to a switch statement
     #useing a dictionary and if, elif, else
-    #
-    pass
 
-def score_to_grade():
-    pass
-1. variableToCompare = 'January'
-2. switch( variableToCompare ) {
-3.     case 'September': month = 9
-4.         break
-5.     case 'November': month = 11
-6.         break
-7.     case s: ...statements...
-8.         break
-9.     case 'January': month = 1
-10.         break
-11.    default: raise ValueError
-12.        break
-13. }
+def switch_grades(grades):
+    score_dict = {
+    one(): 4.0,
+    two(): 3.0,
+    three(): 2.0,
+    four(): 1.0,
+    default(): 0.0
+    }
+    grade_func = score_dict.get(grades, 'default')
+    return grade_func
 
-a_dict = {
-'A': 4.0
-'B': 3.0
-'C': 2.0
-'D': 1.0
-'F': 0.0
-}
 
 if __name__ == '__main__':
-    pass
+    score1 = int(input("Enter score1: "))
+    score2 = int(input("Enter score2: "))
+    score3 = int(input("Enter score3: "))
+    average_score = switch_average(score1, score2, score3)
+    print(average_score)
+    grade(average_score)
