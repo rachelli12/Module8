@@ -52,5 +52,6 @@ if __name__ == '__main__':
     score2 = int(input("Enter score2: "))
     score3 = int(input("Enter score3: "))
     average_score = switch_average(score1, score2, score3)
+    print(switch_grades(average_score))
     print(average_score)
     grade(average_score)
