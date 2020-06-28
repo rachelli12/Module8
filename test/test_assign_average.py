@@ -1,3 +1,10 @@
+"""
+Program name: test_assign_average.py
+Author: Rachel Li
+Last date modified: 06/28/2020
+
+The purpose of this program is to test assign_average.py
+"""
 import unittest
 from more_fun_with_collections import assign_average as aa
 
