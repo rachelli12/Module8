@@ -19,7 +19,7 @@ class TestGrade(unittest.TestCase):
         self.assertEqual(average, aa.switch_average(score1 = 50, score2 = 50, score3 = 50))
     def test_average_invalid(self):
         with self.assertRaises(ValueError):
-            aa.switch_average(101)
+            aa.switch_average(score1= 101, score2= 101, score3 = 101)
 
 if __name__ == '__main__':
     unittest.main()
