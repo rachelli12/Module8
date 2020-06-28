@@ -29,6 +29,9 @@ def switch_average(score1, score2, score3):
         return four()
     elif average_score < 50:
         return default()
+    elif average_score > 100 and average_score < 0:
+        print("Enter valid input")
+        raise ValueError
     #return score = ??
     #make similar function wise to a switch statement
     #useing a dictionary and if, elif, else
