@@ -1,7 +1,20 @@
 """
+Program: name: dictionary_update.py
+Author: Rachel Li
+Last date modified: 06/27/2020
 
+The purpose of this program is to calculate average scores using dictionary
 """
 def get_test_scores():
+    '''
+    use reST style
+
+    :param scores_dict: this represents the dictionary
+    :param num_score: this represents the number of scores
+    :param score: this repesents the score
+    :return: this returns the score in dictionary
+    :keyError: this raises exception
+    '''
     scores_dict = dict()
     # prompt user to input the number of test score
     try:
@@ -24,6 +37,12 @@ def get_test_scores():
     return scores_dict
 
 def average_scores(dict_avg):
+    '''
+    use reST style
+
+    :param dict_avg: this represents the dictionary
+    :return: returns the average scores in dictinoary
+    '''
     #use len() to determine num_scores for calculation
     total = 0
     for score,value in dict_avg.items():
